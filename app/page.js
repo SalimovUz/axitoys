@@ -1,101 +1,120 @@
+
+"use client"
 import Image from "next/image";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import SendIcon from "@mui/icons-material/Send";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import NearMeIcon from "@mui/icons-material/NearMe";
+import PhoneIcon from "@mui/icons-material/Phone";
+import Snowfall from "react-snowfall"; // Yangi yil qori
+import Judo from "@/public/judo.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-b from-blue-200 via-white to-green-100 flex flex-col items-center relative">
+      {/* Snowfall effect */}
+      <Snowfall color="#fff" snowflakeCount={100} />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Header Section */}
+      <div className="text-center py-8">
+        <Image
+          src={Judo}
+          alt="Logo"
+          className="w-32 h-32 mx-auto rounded-full shadow-md border-4 border-green-500"
+        />
+        <h1 className="text-5xl font-extrabold text-red-800 mt-4">
+          AXI TOYS  <span className="text-4xl text-blue-950">(O’YINCHOQLAR DO’KONI)</span>🎄
+        </h1>
+        <p className="text-gray-800 mt-2 text-lg tracking-wide">
+          Yangi Yilingiz bilan!
+        </p>
+        <p>🚚Toshkent bo'ylab yetkazish xizmati!</p>
+      </div>
+
+      {/* Social Media Links */}
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm space-y-6 border-2 border-red-200">
+        <h1 className="text-center text-xl font-semibold text-green-800">
+          Ijtimoiy tarmoqlarimiz!
+        </h1>
+        <a
+          href="https://t.me/axi_toys_uz"
+          className="flex items-center gap-4 p-3 rounded-lg hover:bg-blue-50 transition border"
+        >
+          <TelegramIcon className="text-blue-600 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Telegram</h1>
+            <p className="text-gray-600">@axi_toys_uz</p>
+          </div>
+        </a>
+        <a
+          href="https://www.instagram.com/axi_toys_uz/"
+          className="flex items-center gap-4 p-3 rounded-lg hover:bg-pink-50 transition border"
+        >
+          <InstagramIcon className="text-pink-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Instagram</h1>
+            <p className="text-gray-600">@axi_toys_uz</p>
+          </div>
+        </a>
+        <a
+          href="https://t.me/AbuZayd_Qori"
+          className="flex items-center gap-4 p-3 rounded-lg hover:bg-blue-50 transition border"
+        >
+          <SendIcon className="text-blue-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Telegram Admin</h1>
+            <p className="text-gray-600">@AbuZayd_Qori</p>
+          </div>
+        </a>
+        {/* Phone Number */}
+        <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-green-50 transition border">
+          <PhoneIcon className="text-green-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Bog'lanish</h1>
+            <p className="text-gray-600">+998 95 637 9797</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+      </div>
+
+      {/* Locations Section */}
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm space-y-6 mt-10 mb-8 border-2 border-red-200">
+        <h1 className="text-center text-xl font-semibold text-green-800">
+          Manzil (Filiallarimiz)
+        </h1>
+        <a href="https://www.google.com/maps/place/Axi+Toys+uz/@41.3683785,69.2659827,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8d005b672e5f:0x19d404913a6f05b5!8m2!3d41.3683785!4d69.2685576!16s%2Fg%2F11ltfy_l23?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
+          <LocationOnIcon className="text-red-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Yunusobod 6-kv</h1>
+            <p className="text-gray-600">☎️Tel: +998 94 642 3300</p>
+          </div>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+        <a href="https://www.google.com/maps/place/Axi+Toys+Uz/@41.2966908,69.2149451,19.14z/data=!4m6!3m5!1s0x38ae8b0066a82d07:0x674569ada712a91a!8m2!3d41.2969136!4d69.2151674!16s%2Fg%2F11ltd8snd8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
+          <LocationOnIcon className="text-red-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Chilonzor 7-kv</h1>
+            <p className="text-gray-600">☎️Tel: +998 95 637 9797</p>
+          </div>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
+          <LocationOnIcon className="text-red-500 text-3xl" />
+          <div>
+            <h1 className="text-lg font-bold">Qoraqamish 1/2</h1>
+            <p className="text-gray-600">☎️Tel: +998 77 034 7050</p>
+          </div>
+        </div>
+        {/* <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition">
+          <NearMeIcon className="text-green-500 text-3xl" />
+          <div>
+            <a
+              href="https://maps.app.goo.gl/ZEoNCx3wXhbDqU6i8"
+              className="text-blue-600 hover:underline"
+            >
+              Lokatsiya
+            </a>
+          </div>
+        </div> */}
+      </div>
     </div>
   );
 }
