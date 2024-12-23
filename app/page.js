@@ -8,7 +8,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Snowfall from "react-snowfall"; // Yangi yil qori
-import Judo from "@/public/judo.png";
+import Judo from "@/public/judo.jpg";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <p className="text-gray-800 mt-2 text-lg tracking-wide">
           Yangi Yilingiz bilan!
         </p>
-        <p>🚚Toshkent bo'ylab yetkazish xizmati!</p>
+        <p>🚚O'zbekiston bo'ylab yetkazish xizmati!</p>
       </div>
 
       {/* Social Media Links */}
@@ -58,13 +58,13 @@ export default function Home() {
           </div>
         </a>
         <a
-          href="https://t.me/AbuZayd_Qori"
+          href="https://t.me/Axi_Toys"
           className="flex items-center gap-4 p-3 rounded-lg hover:bg-blue-50 transition border"
         >
           <SendIcon className="text-blue-500 text-3xl" />
           <div>
             <h1 className="text-lg font-bold">Telegram Admin</h1>
-            <p className="text-gray-600">@AbuZayd_Qori</p>
+            <p className="text-gray-600">@Axi_Toys</p>
           </div>
         </a>
         {/* Phone Number */}
@@ -99,8 +99,8 @@ export default function Home() {
         <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
           <LocationOnIcon className="text-red-500 text-3xl" />
           <div>
-            <h1 className="text-lg font-bold">Qoraqamish 1/2</h1>
-            <p className="text-gray-600">☎️Tel: +998 77 034 7050</p>
+            <h1 className="text-lg font-bold">Qoraqamish 2/1</h1>
+            <p className="text-gray-600">☎️Tel: +998 99 967 22 22</p>
           </div>
         </div>
         {/* <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition">

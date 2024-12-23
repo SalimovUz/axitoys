@@ -1,5 +1,5 @@
 import "./globals.css";
-import favicon from "@/public/judo.png";
+import favicon from "@/public/judo.jpg";
 
 export const metadata = {
   title: "AxiToys",
