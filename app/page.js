@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import Image from "next/image";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -18,13 +17,14 @@ export default function Home() {
 
       {/* Header Section */}
       <div className="text-center py-8">
-        <Image
-          src={Judo}
-          alt="Logo"
-          className="w-32 h-32 mx-auto rounded-full shadow-md border-4 border-green-500"
-        />
+        <div className="w-32 h-32 mx-auto rounded-full shadow-md border-4 border-green-500 overflow-hidden">
+          <Image src={Judo} alt="Logo" className="w-full h-full object-cover" />
+        </div>
+
         <h1 className="text-5xl font-extrabold text-red-800 mt-4">
-          AXI TOYS  <span className="text-4xl text-blue-950">(O’YINCHOQLAR DO’KONI)</span>🎄
+          AXI TOYS{" "}
+          <span className="text-4xl text-blue-950">(O’YINCHOQLAR DO’KONI)</span>
+          🎄
         </h1>
         <p className="text-gray-800 mt-2 text-lg tracking-wide">
           Yangi Yilingiz bilan!
@@ -82,14 +82,20 @@ export default function Home() {
         <h1 className="text-center text-xl font-semibold text-green-800">
           Manzil (Filiallarimiz)
         </h1>
-        <a href="https://www.google.com/maps/place/Axi+Toys+uz/@41.3683785,69.2659827,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8d005b672e5f:0x19d404913a6f05b5!8m2!3d41.3683785!4d69.2685576!16s%2Fg%2F11ltfy_l23?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
+        <a
+          href="https://www.google.com/maps/place/Axi+Toys+uz/@41.3683785,69.2659827,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8d005b672e5f:0x19d404913a6f05b5!8m2!3d41.3683785!4d69.2685576!16s%2Fg%2F11ltfy_l23?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border"
+        >
           <LocationOnIcon className="text-red-500 text-3xl" />
           <div>
             <h1 className="text-lg font-bold">Yunusobod 6-kv</h1>
             <p className="text-gray-600">☎️Tel: +998 94 642 3300</p>
           </div>
         </a>
-        <a href="https://www.google.com/maps/place/Axi+Toys+Uz/@41.2966908,69.2149451,19.14z/data=!4m6!3m5!1s0x38ae8b0066a82d07:0x674569ada712a91a!8m2!3d41.2969136!4d69.2151674!16s%2Fg%2F11ltd8snd8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border">
+        <a
+          href="https://www.google.com/maps/place/Axi+Toys+Uz/@41.2966908,69.2149451,19.14z/data=!4m6!3m5!1s0x38ae8b0066a82d07:0x674569ada712a91a!8m2!3d41.2969136!4d69.2151674!16s%2Fg%2F11ltd8snd8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition border"
+        >
           <LocationOnIcon className="text-red-500 text-3xl" />
           <div>
             <h1 className="text-lg font-bold">Chilonzor 7-kv</h1>
